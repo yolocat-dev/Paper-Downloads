@@ -8,21 +8,102 @@ const downloads = {
         "limit": 10,
         "cache": null,
     },
-    "Velocity": {
-        "title": "Velocity",
-        "api_endpoint": "velocity",
-        "api_version": "3.0.0",
-        "github": "PaperMC/Velocity",
-        "desc": "The modern, next-generation Minecraft server proxy.",
+	"Paper-1.18": {
+        "title": "Paper 1.18.2",
+        "api_endpoint": "paper",
+        "api_version": "1.18",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.18.2",
         "limit": 10,
         "cache": null,
     },
-    "Waterfall": {
-        "title": "Waterfall",
-        "api_endpoint": "waterfall",
-        "api_version": "1.19",
-        "github": "PaperMC/Waterfall",
-        "desc": "Our fork of the BungeeCord software, with improved Forge support and more features.",
+	"Paper-1.17": {
+        "title": "Paper 1.17.1",
+        "api_endpoint": "paper",
+        "api_version": "1.17",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.17.1",
+        "limit": 10,
+        "cache": null,
+    },
+	"Paper-1.16": {
+        "title": "Paper 1.16.5",
+        "api_endpoint": "paper",
+        "api_version": "1.16",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.16.5",
+        "limit": 10,
+        "cache": null,
+    },
+	"Paper-1.15": {
+        "title": "Paper 1.15.2",
+        "api_endpoint": "paper",
+        "api_version": "1.15",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.15.2",
+        "limit": 10,
+        "cache": null,
+    },
+	"Paper-1.14": {
+        "title": "Paper 1.14.4",
+        "api_endpoint": "paper",
+        "api_version": "1.14",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.14.4",
+        "limit": 10,
+        "cache": null,
+    },
+	"Paper-1.13": {
+        "title": "Paper 1.13.2",
+        "api_endpoint": "paper",
+        "api_version": "1.13",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.13.2",
+        "limit": 10,
+        "cache": null,
+    },
+	"Paper-1.12": {
+        "title": "Paper 1.12.2",
+        "api_endpoint": "paper",
+        "api_version": "1.12",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.12.2",
+        "limit": 10,
+        "cache": null,
+    },
+	"Paper-1.11": {
+        "title": "Paper 1.11.2",
+        "api_endpoint": "paper",
+        "api_version": "1.11",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.11.2",
+        "limit": 10,
+        "cache": null,
+    },
+	"Paper-1.10": {
+        "title": "Paper 1.10.2",
+        "api_endpoint": "paper",
+        "api_version": "1.10",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.10.2",
+        "limit": 10,
+        "cache": null,
+    },
+	"Paper-1.9": {
+        "title": "Paper 1.9.4",
+        "api_endpoint": "paper",
+        "api_version": "1.9",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.9.4",
+        "limit": 10,
+        "cache": null,
+    },
+	"Paper-1.8": {
+        "title": "Paper 1.8.8",
+        "api_endpoint": "paper",
+        "api_version": "1.8",
+        "github": "PaperMC/Paper",
+        "desc": "Minecraft 1.8.8",
         "limit": 10,
         "cache": null,
     }
@@ -212,10 +293,6 @@ function load(id) {
 
     if (json.builds.length > downloads[id].limit) {
         container.innerHTML += `<a class="wide-btn btn light-blue darken-2 waves-effect waves-light white-text" onclick="loadMore('${id}')">More</a><br>`;
-    }
-
-    if (downloads[id].api_endpoint === "paper") {
-        container.innerHTML += `<a class="wide-btn btn grey darken-2 waves-effect waves-light" href="legacy">Legacy</a>`
     }
 
     if (atLeastOneExperimental) {

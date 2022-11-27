@@ -1,7 +1,7 @@
-PaperMC Website
+PaperMC Downloads
 ===============
 
-Flying through a cloud near you
+Check out the deployed site [here](https://papermcdownloads.web.app)
 
 Building
 --------
